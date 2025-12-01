@@ -1,0 +1,419 @@
+https://hack2skill-dot-yamm-track.appspot.com/2SI_S3ntu85o3dMlMLNBlttW9ri9l79Xuat7pahsZp7u6AU3OmgEOYzMCSAFSm21vA3TadulsMS6PAOMfbAfbnbwtrEnYDicq9qzg_9hkjjsJQwht9hTVyEDjZSICL4cdV-971D1rHVixRSpKcij3uPeJtusY9-6SnEqcuKfnIEqK9_Q2dPVCfgJHd8WDshW-1cj_bCUL_XDMAR0HxVYkpey7vBngbzI3nfCK7v7lbbHBZyLTkff5u8exZg
+
+pssword: La6m27b7tB4J3AHB
+https://d2pttg6yoyfvvk.cloudfront.net/?folder=/environment
+
+Catalog
+https://catalog.us-east-1.prod.workshops.aws/event/dashboard/en-US/workshop/partyrock-guide/partyrock-chatbot-app
+
+PartyRock labs (no AWS access required)
+https://partyrock.aws/
+username: anbunathan
+Hos%C5%ABr
+https://partyrock.aws/home
+https://partyrock.aws/backstage
+https://partyrock.aws/u/js2222/9ktuP8ntP/PaintBrush
+# painting:
+https://partyrock.aws/u/anbunathan/nco0zE7GG/new-app-nco0zE7GG
+# Content summarizer
+https://partyrock.aws/u/js2222/aw3_JHzyG/Content-Summarizer
+# build from scratch
+https://partyrock.aws/
+# generate app->Build manually
+https://partyrock.aws/u/anbunathan/wi4ymwk_4/new-app-wi4ymwk_4
+
+Aws console:
+https://us-west-2.console.aws.amazon.com/console/home?region=us-west-2#
+Workshop page:
+https://catalog.us-east-1.prod.workshops.aws/event/dashboard/en-US/workshop/prerequisites/lab-setup
+AWSworkshop code:
+/mnt/d/shared/trial/aws-workshop
+root directory
+cd /mnt/d/shared/trial/aws-workshop/workshop
+python3 -m venv .venv && source .venv/bin/activate
+pip3 install boto3
+pip3 install numpy
+pip3 install streamlit
+pip3 install chromadb
+check configuration:
+cd /mnt/d/shared/trial/aws-workshop/workshop/completed/api
+python3 bedrock_api.py
+
+Create a file:
+D:\shared\trial\aws-workshop\workshop\labs\api\bedrock_api.py
+cd /mnt/d/shared/trial/aws-workshop/workshop/labs/api/
+python3 bedrock_api.py
+
+Converse api:
+create a file:
+D:\shared\trial\aws-workshop\workshop\labs\converse\converse_api.py
+cd /mnt/d/shared/trial/aws-workshop/workshop/labs/converse/
+python3 converse_api.py
+
+params
+D:\shared\trial\aws-workshop\workshop\labs\params\params.py
+cd /mnt/d/shared/trial/aws-workshop/workshop/labs/params
+python3 params.py "us.amazon.nova-pro-v1:0" "Please write a haiku:"
+
+temperature
+D:\shared\trial\aws-workshop\workshop\labs\temperature\temperature.py
+cd /mnt/d/shared/trial/aws-workshop/workshop/labs/temperature
+python3 temperature.py "Write a haiku about a long journey. Skip the preamble:" 0.0
+python3 temperature.py "Write a haiku about a long journey. Skip the preamble:" 1.0
+
+tool_use
+D:\shared\trial\aws-workshop\workshop\labs\tool_use\tool_use.py
+cd /mnt/d/shared/trial/aws-workshop/workshop/labs/tool_use
+python3 tool_use.py
+
+intro_streaming
+D:\shared\trial\aws-workshop\workshop\labs\intro_streaming\intro_streaming.py
+cd /mnt/d/shared/trial/aws-workshop/workshop/labs/intro_streaming
+python3 intro_streaming.py
+
+embedding
+D:\shared\trial\aws-workshop\workshop\labs\embedding\bedrock_embedding.py
+cd /mnt/d/shared/trial/aws-workshop/workshop/labs/embedding
+python3 bedrock_embedding.py
+
+simple_streamlit
+D:\shared\trial\aws-workshop\workshop\labs\simple_streamlit\simple_streamlit_app.py
+cd /mnt/d/shared/trial/aws-workshop/workshop/labs/simple_streamlit
+streamlit run simple_streamlit_app.py
+Browser: http://localhost:8501/
+Enter Blue
+Response: I like blue
+
+text
+D:\shared\trial\aws-workshop\workshop\labs\text\text_lib.py
+D:\shared\trial\aws-workshop\workshop\labs\text\text_app.py
+cd /mnt/d/shared/trial/aws-workshop/workshop/labs/text
+streamlit run text_app.py
+Browser: http://localhost:8501/
+try the prompts
+What is a good name for a product that provides large language models?
+Why is the sky blue?
+What is the capital of New Hampshire?
+I am pleased to meet you. What is the sentiment of the previous statement?
+
+rag
+D:\shared\trial\aws-workshop\workshop\labs\rag\rag_lib.py
+D:\shared\trial\aws-workshop\workshop\labs\rag\rag_app.py
+D:\shared\trial\aws-workshop\workshop\data\populate_collection_new.py
+cd /mnt/d/shared/trial/aws-workshop/workshop/data
+python3 populate_collection_new.py
+change rag_lib.py (D:\shared\trial\aws-workshop\workshop\labs\rag\rag_lib.py)
+---------------
+collection = get_collection("../../data/chroma_new", "bedrock_faqs_collection")
+---------------
+cd /mnt/d/shared/trial/aws-workshop/workshop/labs/rag
+streamlit run rag_app.py
+Browser: http://localhost:8501/
+try the prompts
+What are some of the key features of Amazon Bedrock?
+What can you do with Guardrails for Amazon Bedrock?
+
+chatbot
+D:\shared\trial\aws-workshop\workshop\labs\chatbot\chatbot_lib.py
+D:\shared\trial\aws-workshop\workshop\labs\chatbot\chatbot_app.py
+cd /mnt/d/shared/trial/aws-workshop/workshop/labs/chatbot
+streamlit run chatbot_app.py
+Browser: http://localhost:8501/
+try the prompts
+What is the first color of the rainbow?
+What is the next one?
+What is the first planet from the sun?
+What is the next one?
+
+rag_chatbot
+D:\shared\trial\aws-workshop\workshop\labs\rag_chatbot\rag_chatbot_lib.py
+D:\shared\trial\aws-workshop\workshop\labs\rag_chatbot\rag_chatbot_app.py
+in another WSL:
+cd /mnt/d/shared/trial/aws-workshop/workshop
+python3 -m venv .venv && source .venv/bin/activate
+cd /mnt/d/shared/trial/aws-workshop/workshop/data
+python3 populate_collection_new.py
+# Observe
+Initialized collection services_collection
+Initialized collection bedrock_faqs_collection
+change rag_chatbot_lib.py (D:\shared\trial\aws-workshop\workshop\labs\rag_chatbot\rag_chatbot_lib.py)
+---------------
+collection = get_collection("../../data/chroma_new", "bedrock_faqs_collection")
+---------------
+cd /mnt/d/shared/trial/aws-workshop/workshop/labs/rag_chatbot
+streamlit run rag_chatbot_app.py
+Browser: http://localhost:8501/
+try the prompts
+what can you do with it?
+what else?
+what models?
+
+summarization
+D:\shared\trial\aws-workshop\workshop\labs\summarization\summarization_lib.py
+D:\shared\trial\aws-workshop\workshop\labs\summarization\summarization_app.py
+in another WSL:
+cd /mnt/d/shared/trial/aws-workshop/workshop
+python3 -m venv .venv && source .venv/bin/activate
+cd /mnt/d/shared/trial/aws-workshop/workshop/data
+python3 populate_collection_new.py
+# Observe
+Initialized collection services_collection
+Initialized collection bedrock_faqs_collection
+cd /mnt/d/shared/trial/aws-workshop/workshop/labs/summarization
+streamlit run summarization_app.py
+Browser: http://localhost:8501/
+try the prompts
+Please summarize the document, highlighting the three most important elements that an intern or new hire should focus on.
+What are the top three principles for a newly promoted manager to consider?
+
+streaming
+D:\shared\trial\aws-workshop\workshop\labs\streaming\streaming_lib.py
+D:\shared\trial\aws-workshop\workshop\labs\streaming\streaming_app.py
+in another WSL:
+cd /mnt/d/shared/trial/aws-workshop/workshop
+python3 -m venv .venv && source .venv/bin/activate
+cd /mnt/d/shared/trial/aws-workshop/workshop/data
+python3 populate_collection_new.py
+# Observe
+Initialized collection services_collection
+Initialized collection bedrock_faqs_collection
+cd /mnt/d/shared/trial/aws-workshop/workshop/labs/streaming
+streamlit run streaming_app.py
+Browser: http://localhost:8501/
+try the prompts
+Write a story about two cats that go on an adventure:
+
+embeddings_search
+D:\shared\trial\aws-workshop\workshop\labs\embeddings_search\embeddings_search_lib.py
+D:\shared\trial\aws-workshop\workshop\labs\embeddings_search\embeddings_search_app.py
+in another WSL:
+cd /mnt/d/shared/trial/aws-workshop/workshop
+python3 -m venv .venv && source .venv/bin/activate
+cd /mnt/d/shared/trial/aws-workshop/workshop/data
+python3 populate_collection_new.py
+# Observe
+Initialized collection services_collection
+Initialized collection bedrock_faqs_collection
+change embeddings_search_lib.py (D:\shared\trial\aws-workshop\workshop\labs\embeddings_search\embeddings_search_lib.py)
+---------------
+collection = get_collection("../../data/chroma_new", "bedrock_faqs_collection")
+---------------
+cd /mnt/d/shared/trial/aws-workshop/workshop/labs/embeddings_search
+streamlit run embeddings_search_app.py
+Browser: http://localhost:8501/
+try the prompts
+What can you do with Amazon Bedrock?
+What are the key features of Guardrails for Amazon Bedrock?
+https://anb-workshoplabsembeddings-searchembeddings-search-app-5n0sjs.streamlit.app/
+
+recommendations
+D:\shared\trial\aws-workshop\workshop\labs\recommendations\recommendations_lib.py
+D:\shared\trial\aws-workshop\workshop\labs\recommendations\recommendations_app.py
+in another WSL:
+cd /mnt/d/shared/trial/aws-workshop/workshop
+python3 -m venv .venv && source .venv/bin/activate
+cd /mnt/d/shared/trial/aws-workshop/workshop/data
+python3 populate_collection_new.py
+# Observe
+Initialized collection services_collection
+Initialized collection bedrock_faqs_collection
+change recommendations_lib.py (D:\shared\trial\aws-workshop\workshop\labs\embeddings_search\recommendations_lib.py)
+---------------
+collection = get_collection("../../data/chroma_new", "bedrock_faqs_collection")
+---------------
+cd /mnt/d/shared/trial/aws-workshop/workshop/labs/recommendations
+streamlit run recommendations_app.py
+Browser: http://localhost:8501/
+try the prompts
+A service that allows users to access applications through a virtual desktop
+A cloud NoSQL database service for massive amounts of data
+
+json
+D:\shared\trial\aws-workshop\workshop\labs\json\json_lib.py
+D:\shared\trial\aws-workshop\workshop\labs\json\json_app.py
+in another WSL:
+cd /mnt/d/shared/trial/aws-workshop/workshop
+python3 -m venv .venv && source .venv/bin/activate
+cd /mnt/d/shared/trial/aws-workshop/workshop/data
+python3 populate_collection_new.py
+# Observe
+Initialized collection services_collection
+Initialized collection bedrock_faqs_collection
+cd /mnt/d/shared/trial/aws-workshop/workshop/labs/json
+streamlit run json_app.py
+Browser: http://localhost:8501/
+try the content
+Dear Acme Investments,
+I am writing to bring to your attention a situation that I believe to be unethical on the part of one of your account managers, Roger Longbottom.
+I recently met with Roger to discuss my investment portfolio and was deeply concerned to hear that he suggested I invest in a certain stock. When I asked him why he thought this was a good investment, he stated that the stock was currently undervalued and was likely to increase in value in the near future.
+However, upon further research, I have discovered that the stock in question has a questionable reputation. It has been the subject of multiple lawsuits and has been found to have engaged in questionable business practices.
+I believe Roger was aware of these facts, but failed to disclose them to me. As a result, I feel I was misled into making an unwise investment decision.
+I therefore urge you to investigate whether Roger has acted unethically and take appropriate action if necessary.
+
+csv 
+D:\shared\trial\aws-workshop\workshop\labs\csv\csv_lib.py
+D:\shared\trial\aws-workshop\workshop\labs\csv\csv_app.py
+in another WSL:
+cd /mnt/d/shared/trial/aws-workshop/workshop
+python3 -m venv .venv && source .venv/bin/activate
+cd /mnt/d/shared/trial/aws-workshop/workshop/data
+python3 populate_collection_new.py
+# Observe
+Initialized collection services_collection
+Initialized collection bedrock_faqs_collection
+cd /mnt/d/shared/trial/aws-workshop/workshop/labs/csv
+streamlit run csv_app.py
+Browser: http://localhost:8501/
+try the content
+Dear Acme Investments,
+I am writing to compliment one of your customer service representatives, Shirley Scarry. I recently had the pleasure of speaking with Shirley regarding my loan. Shirley was extremely helpful and knowledgeable, and went above and beyond to ensure that all of my questions were answered. Shirley also had Robert Herbford join the call, who wasn't quite as helpful. My wife, Clara Bradford, didn't like him at all.
+Shirley's professionalism and expertise were greatly appreciated, and I would be happy to recommend Acme Investments to others based on my experience.
+Sincerely,
+Carson Bradford
+
+image_search 
+D:\shared\trial\aws-workshop\workshop\labs\image_search\image_search_lib.py
+D:\shared\trial\aws-workshop\workshop\labs\image_search\image_search_app.py
+in another WSL:
+cd /mnt/d/shared/trial/aws-workshop/workshop
+python3 -m venv .venv && source .venv/bin/activate
+cd /mnt/d/shared/trial/aws-workshop/workshop/data
+python3 populate_image_collection_new.py
+# Observe
+Initialized collection services_collection
+Initialized collection bedrock_faqs_collection
+change image_search_lib.py (D:\shared\trial\aws-workshop\workshop\labs\embeddings_search\image_search_lib.py)
+---------------
+collection = get_collection("../../data/chroma_new", "bedrock_faqs_collection")
+---------------
+cd /mnt/d/shared/trial/aws-workshop/workshop/labs/image_search
+streamlit run image_search_app.py --server.enableXsrfProtection=false
+Browser: http://localhost:8501/
+View the images under Image search tab
+Cat
+upload and check similar images under Find similar images tab:
+D:\shared\trial\aws-workshop\workshop\sample_images
+
+image_prompts
+D:\shared\trial\aws-workshop\workshop\labs\image_prompts\image_search_lib.py
+D:\shared\trial\aws-workshop\workshop\labs\image_prompts\image_search_app.py
+in another WSL:
+cd /mnt/d/shared/trial/aws-workshop/workshop
+python3 -m venv .venv && source .venv/bin/activate
+cd /mnt/d/shared/trial/aws-workshop/workshop/data
+python3 populate_image_collection_new.py
+# Observe
+Initialized collection services_collection
+Initialized collection bedrock_faqs_collection
+change image_search_lib.py (D:\shared\trial\aws-workshop\workshop\labs\embeddings_search\image_search_lib.py)
+---------------
+collection = get_collection("../../data/chroma_new", "bedrock_faqs_collection")
+---------------
+cd /mnt/d/shared/trial/aws-workshop/workshop/labs/image_prompts
+streamlit run image_prompts_app.py
+Browser: http://localhost:8501/
+Try some prompts:
+daguerreotype of robot and cowboy standing side-by-side, directly facing the camera, steampunk, western town in the background, long shot, sepia tone
+photograph of a calico cat, cyberpunk, futuristic cityscape in the background, low angle, long shot, neon sign on building "CALICO CORP", Epic, photorealistic, 4K
+
+image_variation
+D:\shared\trial\aws-workshop\workshop\labs\image_variation\image_search_lib.py
+D:\shared\trial\aws-workshop\workshop\labs\image_variation\image_search_app.py
+in another WSL:
+cd /mnt/d/shared/trial/aws-workshop/workshop
+python3 -m venv .venv && source .venv/bin/activate
+cd /mnt/d/shared/trial/aws-workshop/workshop/labs/image_variation
+streamlit run image_variation_app.py --server.enableXsrfProtection=false
+Browser: http://localhost:8501/
+Try this:
+Click generate button
+
+image_style_mixing
+D:\shared\trial\aws-workshop\workshop\labs\image_style_mixing\image_search_lib.py
+D:\shared\trial\aws-workshop\workshop\labs\image_style_mixing\image_search_app.py
+in another WSL:
+cd /mnt/d/shared/trial/aws-workshop/workshop
+python3 -m venv .venv && source .venv/bin/activate
+cd /mnt/d/shared/trial/aws-workshop/workshop/labs/image_style_mixing
+streamlit run image_style_mixing_app.py --server.enableXsrfProtection=false
+Browser: http://localhost:8501/
+Try this:
+Click generate button
+
+image_masking
+D:\shared\trial\aws-workshop\workshop\labs\image_masking\image_search_lib.py
+D:\shared\trial\aws-workshop\workshop\labs\image_masking\image_search_app.py
+in another WSL:
+cd /mnt/d/shared/trial/aws-workshop/workshop
+python3 -m venv .venv && source .venv/bin/activate
+cd /mnt/d/shared/trial/aws-workshop/workshop/labs/image_masking
+streamlit run image_masking_app.py --server.enableXsrfProtection=false
+Browser: http://localhost:8501/
+Try this:
+Click generate button
+prompt:
+Framed photographs over a desk, with a stool under the desk
+Inpainting->Generate
+prompt:
+A cozy living room
+Outpainting->Generate
+Mode->prompt, Item to mak=painting, prompt text=embedded fireplace, inpainting, generate
+Mode->prompt, Item to mak=painting, prompt text=living room, outpainting, generate
+
+image_replacement
+D:\shared\trial\aws-workshop\workshop\labs\image_replacement\image_search_lib.py
+D:\shared\trial\aws-workshop\workshop\labs\image_replacement\image_search_app.py
+in another WSL:
+cd /mnt/d/shared/trial/aws-workshop/workshop
+python3 -m venv .venv && source .venv/bin/activate
+cd /mnt/d/shared/trial/aws-workshop/workshop/labs/image_replacement
+streamlit run image_replacement_app.py --server.enableXsrfProtection=false
+Browser: http://localhost:8501/
+Try this:
+Click generate button
+Remove Television
+
+image_background
+D:\shared\trial\aws-workshop\workshop\labs\image_background\image_background_lib.py
+D:\shared\trial\aws-workshop\workshop\labs\image_background\image_background_app.py
+in another WSL:
+cd /mnt/d/shared/trial/aws-workshop/workshop
+python3 -m venv .venv && source .venv/bin/activate
+cd /mnt/d/shared/trial/aws-workshop/workshop/labs/image_background
+streamlit run image_background_app.py --server.enableXsrfProtection=false
+Browser: http://localhost:8501/
+Try this:
+Click generate button
+
+image_insertion
+D:\shared\trial\aws-workshop\workshop\labs\image_insertion\image_insertion_lib.py
+D:\shared\trial\aws-workshop\workshop\labs\image_insertion\image_insertion_app.py
+in another WSL:
+cd /mnt/d/shared/trial/aws-workshop/workshop
+python3 -m venv .venv && source .venv/bin/activate
+cd /mnt/d/shared/trial/aws-workshop/workshop/labs/image_insertion
+streamlit run image_insertion_app.py --server.enableXsrfProtection=false
+Browser: http://localhost:8501/
+Try this:
+Click generate button
+
+image_extension
+D:\shared\trial\aws-workshop\workshop\labs\image_extension\image_extension_lib.py
+D:\shared\trial\aws-workshop\workshop\labs\image_extension\image_extension_app.py
+cd /mnt/d/shared/trial/aws-workshop/workshop/labs/image_extension
+streamlit run image_extension_app.py --server.enableXsrfProtection=false
+Browser: http://localhost:8501/
+Try this:
+Click generate button
+
+image_understanding
+D:\shared\trial\aws-workshop\workshop\labs\image_understanding\image_understanding_lib.py
+D:\shared\trial\aws-workshop\workshop\labs\image_understanding\image_understanding_app.py
+cd /mnt/d/shared/trial/aws-workshop/workshop/labs/image_understanding
+streamlit run image_understanding_app.py --server.enableXsrfProtection=false
+Browser: http://localhost:8501/
+Try this:
+Click generate button
+
+
+
